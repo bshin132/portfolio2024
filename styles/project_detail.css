@@ -1,0 +1,85 @@
+body {
+  background-color: #262626;
+  margin: 0;
+}
+
+.logo {
+  width: 70px;
+}
+
+.logo,
+.menu {
+  padding: 40px;
+  cursor: pointer;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project {
+  margin-top: 0;
+  border-radius: 0 0 20% 20%;
+  height: 300px;
+}
+
+main {
+  margin: auto;
+  width: 60%;
+  color: #fff;
+}
+
+main > h1 {
+  font-family: "benzin-semibold";
+  margin: 20px 0 0 0;
+}
+
+hr {
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-family: "benzin-regular";
+}
+
+.margin {
+  margin-bottom: 0px;
+}
+
+.extra {
+  float: right;
+  font-family: "benzin-regular";
+  margin-top: 0;
+}
+
+.description {
+  font-size: 20px;
+  font-family: "benzin-regular";
+  text-align: justify;
+}
+
+.view {
+    font-family: "benzin-regular";
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.view > img {
+    width: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: "benzin-regular";
+}
+
+.footer > h2 {
+    margin-top: 0;
+    cursor: pointer;
+}
