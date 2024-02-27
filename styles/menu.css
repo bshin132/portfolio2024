@@ -1,0 +1,71 @@
+body {
+  background-color: #262626;
+  margin: 0;
+}
+
+.logo {
+  width: 70px;
+}
+
+.logo,
+.menu {
+  padding: 40px;
+  cursor: pointer;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 120px;
+}
+
+main {
+  margin: auto;
+  width: 55%;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  font-family: "benzin-semibold";
+}
+
+.content > p {
+  margin: 0 20px 0 0;
+}
+
+.content > p,
+h1 {
+  cursor: pointer;
+}
+
+.bottom {
+  margin-left: 40px;
+}
+
+h2 {
+  font-family: "benzin-regular";
+}
+
+.arrow {
+  width: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+.margin {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.extra {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}

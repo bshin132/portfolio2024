@@ -1,0 +1,72 @@
+body {
+  background-color: #262626;
+  margin: 0;
+}
+
+.logo {
+  width: 70px;
+}
+
+.logo,
+.menu {
+  padding: 40px;
+  cursor: pointer;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main {
+  margin: auto;
+  width: 60%;
+  color: #fff;
+}
+
+main > h1 {
+  font-family: "benzin-semibold";
+  margin: 0;
+}
+
+h1 {
+  font-family: "benzin-semibold";
+  color: #fff;
+  margin: 0;
+}
+
+.title {
+  font-family: "benzin-regular";
+  color: #fff;
+}
+
+hr {
+  margin: 0;
+}
+
+main > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right,
+.socials > h2 {
+  font-family: "benzin-regular";
+  color: #fff;
+  cursor: pointer;
+}
+
+.socials {
+  justify-content: flex-end;
+}
+
+.arrow {
+  width: 30px;
+}
