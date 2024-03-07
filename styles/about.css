@@ -1,8 +1,111 @@
 body {
-  background-color: #262626;
-  margin: 0;
+    background-color: #262626;
+    margin: 0;
 }
 
+.logo {
+    width: 70px;
+}
+
+.logo,
+.menu {
+    padding: 70px;
+    cursor: pointer;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main {
+    color: #FFF;
+    padding: 0 500px 0 170px;
+    position: relative;
+    top: 45px;
+}
+
+main>h1 {
+    font-family: 'benzin-semibold';
+    margin: 0;
+}
+
+main>p {
+    font-size: 20px;
+    font-family: 'benzin-regular';
+    text-align: justify;
+}
+
+.me {
+    z-index: -100;
+    width: 300px;
+    height: 80%;
+    border-radius: 0 0 0 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    border-collapse: separate;
+}
+
+.view-project {
+    font-family: "benzin-regular";
+    color: #fff;
+    margin-top: 35px;
+    display: flex;
+}
+
+.view-project>h2,
+img {
+    cursor: pointer;
+}
+
+.arrow {
+    width: 30px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.links {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.links::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: 0.3s;
+    top: 55px;
+}
+
+.links:hover,
+.links:focus {
+    color: white;
+}
+
+.links:hover::after,
+.links:focus::after {
+    background-color: white;
+    width: 100%;
+}
+
+
+/* 
+FOR SMALL LENOVO
 .logo {
   width: 70px;
 }
@@ -58,4 +161,4 @@ main > p {
 .arrow {
     width: 30px;
     cursor: pointer;
-}
+} */

@@ -9,7 +9,7 @@ body {
 
 .logo,
 .menu {
-  padding: 40px;
+  padding: 70px;
   cursor: pointer;
 }
 
@@ -24,6 +24,8 @@ main {
   margin: auto;
   width: 55%;
   color: #fff;
+  position: relative;
+  top: 45px;
 }
 
 .content {
@@ -57,15 +59,45 @@ h2 {
     display: flex;
 }
 
-.margin {
+.links {
   margin-right: 30px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.links::after {
+  content: "";
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 0;
+	transition: 0.3s;
+  top: 55px;
+}
+
+.links:hover,
+.links:focus {
+	color: white;
+}
+
+.links:hover::after,
+.links:focus::after {
+	background-color: white;
+	width: 100%;
 }
 
 .extra {
-    display: flex;
+    display: inline-flex;
     cursor: pointer;
     align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

@@ -1,8 +1,108 @@
 body {
   background-color: #262626;
   margin: 0;
+  overflow: hidden;
 }
 
+.logo {
+  width: 70px;
+}
+
+.logo,
+.menu {
+  padding: 70px;
+  cursor: pointer;
+}
+
+.me {
+  width: 300px;
+  margin-top: 0;
+}
+
+.top,
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom>div {
+  display: flex;
+  align-items: center;
+  padding: 0px 40px 0 40px;
+}
+
+.bottom>h1 {
+  text-align: center;
+  font-family: "benzin-semibold";
+  color: #fff;
+}
+
+.icons>a>img {
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.view-project>a>h2 {
+  font-family: "benzin-regular";
+  color: #fff;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 30px;
+  cursor: pointer;
+}
+
+.project-container {
+  display: flex;
+}
+
+.links {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.links::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: 0.3s;
+  top: 55px;
+}
+
+.links:hover,
+.links:focus {
+  color: white;
+}
+
+.links:hover::after,
+.links:focus::after {
+  background-color: white;
+  width: 100%;
+}
+
+
+/*
+FOR LENOVO SHIT COMPUTER
 .logo {
   width: 70px;
 }
@@ -31,7 +131,7 @@ body {
     width: 100%;
 } */
 
-.bottom > div {
+/* .bottom > div {
   display: flex;
   align-items: center;
   padding: 0px 40px 0 40px;
@@ -57,4 +157,4 @@ body {
 .arrow {
   width: 30px;
   cursor: pointer;
-}
+} */
