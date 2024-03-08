@@ -4,12 +4,16 @@ body {
 }
 
 .logo {
-  width: 70px;
+  width: 60px;
+}
+
+.menu {
+  width: 60px;
 }
 
 .logo,
 .menu {
-  padding: 70px;
+  padding: 90px;
   cursor: pointer;
 }
 
