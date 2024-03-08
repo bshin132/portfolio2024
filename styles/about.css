@@ -4,12 +4,16 @@ body {
 }
 
 .logo {
-    width: 70px;
+    width: 60px;
+}
+
+.menu {
+    width: 60px;
 }
 
 .logo,
 .menu {
-    padding: 70px;
+    padding: 90px;
     cursor: pointer;
 }
 
@@ -21,9 +25,9 @@ body {
 
 main {
     color: #FFF;
-    padding: 0 500px 0 170px;
+    padding: 0 530px 0 250px;
     position: relative;
-    top: 45px;
+    top: 10px;
 }
 
 main>h1 {
@@ -39,9 +43,9 @@ main>p {
 
 .me {
     z-index: -100;
-    width: 300px;
+    width: 400px;
     height: 80%;
-    border-radius: 0 0 0 30%;
+    border-radius: 0 0 0 65px;
     position: absolute;
     right: 0;
     top: 0;
