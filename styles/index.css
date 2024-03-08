@@ -5,12 +5,16 @@ body {
 }
 
 .logo {
-  width: 70px;
+  width: 60px;
+}
+
+.menu {
+  width: 60px;
 }
 
 .logo,
 .menu {
-  padding: 70px;
+  padding: 90px;
   cursor: pointer;
 }
 
@@ -35,7 +39,7 @@ body {
 .bottom>div {
   display: flex;
   align-items: center;
-  padding: 0px 40px 0 40px;
+  padding: 0px 70px 0 70px;
 }
 
 .bottom>h1 {
@@ -62,6 +66,12 @@ a {
 .arrow {
   width: 30px;
   cursor: pointer;
+}
+
+.bottom > h1 {
+  position: relative;
+  left: 26px;
+  bottom: 20px;
 }
 
 .project-container {
