@@ -4,12 +4,16 @@ body {
 }
 
 .logo {
-  width: 70px;
+  width: 60px;
+}
+
+.menu {
+  width: 60px;
 }
 
 .logo,
 .menu {
-  padding: 70px;
+  padding: 90px;
   cursor: pointer;
 }
 
@@ -23,12 +27,14 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    border-radius: 0 15% 0 0;
+    border-radius: 0 10% 0 0;
+    width: 800px;
+    height: 670px;
 }
 
 main {
-    padding-left: 40%;
-    padding-right: 10%;
+    padding-left: 52%;
+    padding-right: 12%;
 }
 
 h1 {
@@ -46,7 +52,7 @@ main > div {
     justify-content: space-between;
 }
 
-main > div > h2 {
+main > div > h2, h3 {
     font-family: 'benzin-regular';
     color: #FFF;
 }
