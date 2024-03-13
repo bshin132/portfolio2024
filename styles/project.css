@@ -62,3 +62,39 @@ main > div > h2, h3 {
 .title {
     cursor: pointer;
 }
+
+.project_image {
+  position: absolute;
+  border-radius: 0 10% 0 0;
+  width: 880px;
+  left: 0;
+  top: 0;
+  height: 760px;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.project_list:hover:not(:hover .project_image) .project_image {
+  animation: fadeIn 0.3s linear forwards; 
+}
+
+.project_list:not(:hover) .project_image {
+  animation: fadeOut 0.5s linear forwards; 
+}

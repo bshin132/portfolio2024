@@ -34,7 +34,7 @@ main {
 
 .content {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   font-family: "benzin-semibold";
 }
 
@@ -49,6 +49,10 @@ h1 {
 
 .bottom {
   margin-left: 40px;
+}
+
+a > h1 {
+  font-size: 46px;
 }
 
 h2 {
