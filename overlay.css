@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .5s linear;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    background-color: #262626;
+}
+
+#nav-toggle {
+    -webkit-appearance: none;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1010;
+    font-size: 3rem;
+    color: #fff;
+    padding: 90px;
+}
+
+#nav-toggle:checked {
+    transform: rotate(180deg);
+}
+
+#nav-toggle:checked::before {
+    content: '\f00d';
+    color: #fff;
+    transition: 0.2s linear 0.2s;
+}
+
+#nav-toggle:checked~.navbar {
+    left: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: -110%;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 20%;
+    font-family: "benzin-semibold";
+}
+
+.menu-item {
+    display: flex;
+    align-items: baseline;
+    font-family: "benzin-semibold";
+    color: #fff;
+}
+
+.menu-item>p {
+    margin: 0 20px 0 0;
+}
+
+.top-a {
+    font-size: 4em;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.5);
+    font-weight: bolder;
+    position: relative;
+    letter-spacing: 3px;
+    color: #262626;
+}
+
+.top-a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    transition: 0.3s linear;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.top-a:hover::before {
+    clip-path: polygon(0 0, 100% 0, 99% 100%, 0% 100%);
+}
+
+.bottom {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+a>h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-family: "benzin-regular";
+}
+
+.arrow {
+    width: 30px;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.links {
+    margin-right: 30px;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+
+.links::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: 0.5s;
+    top: 35px;
+}
+
+.links:hover,
+.links:focus {
+    color: white;
+}
+
+.links:hover::after,
+.links:focus::after {
+    background-color: white;
+    width: 100%;
+}
+
+.extra {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
