@@ -33,7 +33,7 @@ html {
 #nav-toggle:checked::before {
     content: '\f00d';
     color: #fff;
-    transition: 0.2s linear 0.2s;
+    transition: 0.3s linear 0.3s;
 }
 
 #nav-toggle:checked~.navbar {
@@ -51,7 +51,7 @@ html {
     align-items: flex-start;
     justify-content: center;
     flex-flow: column;
-    padding: 0 20%;
+    padding: 0 25%;
     font-family: "benzin-semibold";
 }
 
