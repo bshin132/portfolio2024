@@ -34,22 +34,22 @@ body {
 .bottom {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
 }
 
-.bottom>div {
+.bottom > div {
   display: flex;
   align-items: center;
   padding: 0px 70px 0 70px;
 }
 
-.bottom>h1 {
+.bottom > h1 {
   text-align: center;
   font-family: "benzin-semibold";
   color: #fff;
 }
 
-.icons>a>img {
+.icons > a > img {
   margin-left: 14px;
   cursor: pointer;
 }
@@ -58,7 +58,7 @@ a {
   text-decoration: none;
 }
 
-.view-project>a>h2 {
+.view-project > a > h2 {
   font-family: "benzin-regular";
   color: #fff;
   cursor: pointer;
@@ -86,6 +86,7 @@ a {
   cursor: pointer;
   transition: 0.5s;
   position: relative;
+  width: max-content;
 }
 
 .links::after {
@@ -128,8 +129,7 @@ a {
   transform: scale(1.5);
 }
 
-
-/*
+/* 
 FOR LENOVO SHIT COMPUTER
 .logo {
   width: 70px;
@@ -153,13 +153,13 @@ FOR LENOVO SHIT COMPUTER
   justify-content: space-between;
 }
 
-/* .bottom {
+.bottom {
     position: absolute;
     bottom: 0;
     width: 100%;
-} */
+} 
 
-/* .bottom > div {
+.bottom > div {
   display: flex;
   align-items: center;
   padding: 0px 40px 0 40px;
@@ -186,3 +186,148 @@ FOR LENOVO SHIT COMPUTER
   width: 30px;
   cursor: pointer;
 } */
+@media only screen and (max-width: 1100px) {
+  .me {
+    width: 270px;
+  }
+}
+/*large*/
+@media only screen and (max-width: 992px) {
+  .me {
+    width: 270px;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bottom > div,
+  .bottom > h1,
+  .view-project {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center child elements */
+  }
+}
+
+/*medium*/
+@media only screen and (max-width: 840px) {
+  .me {
+    width: 250px;
+  }
+
+  .top,
+  .bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    padding: 30px 140px;
+  }
+
+  .menu {
+    padding: 30px 140px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: auto;
+  }
+
+  .bottom h1 {
+    order: 1; /* Move h1 to the top */
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+
+  .view-project {
+    order: 2; /* Move view-project below h1 */
+  }
+
+  .icons {
+    order: 3; /* Move icons to the bottom */
+    position: relative;
+    right: 15px;
+  }
+
+  .links {
+    margin-right: 0;
+    position: relative;
+    bottom: 13px;
+  }
+}
+
+/*small*/
+@media only screen and (max-width: 576px) {
+  .me {
+    width: 240px;
+  }
+
+  .top {
+    display: flex;
+    justify-content: center;
+  }
+  /* 
+  .logo,
+  .menu {
+    padding: 30px 90px;
+  } */
+
+  .logo {
+    width: 40px;
+    padding: 30px 90px;
+  }
+
+  .menu {
+    width: 50px;
+    padding: 30px 90px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 45px;
+  }
+
+  /* .icons,
+  h1,
+  .view-project {
+    margin: 0;
+  } */
+
+  .bottom > h1 {
+    left: 0;
+  }
+
+  .links {
+    margin: 0;
+    position: relative;
+    bottom: 13px;
+  }
+
+  .bottom h1 {
+    order: 1; /* Move h1 to the top */
+  }
+
+  .view-project {
+    order: 2; /* Move view-project below h1 */
+  }
+
+  .icons {
+    order: 3; /* Move icons to the bottom */
+    position: relative;
+    right: 12px;
+  }
+
+  .links::after {
+    top: 54px;
+  }
+}

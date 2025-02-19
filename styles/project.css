@@ -71,7 +71,14 @@ main > div > h2, h3 {
   top: 0;
   height: 760px;
   opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Prevent it from interfering with other elements */
 }
+
+.title:hover + .project_image {
+  opacity: 1;
+}
+
 
 @keyframes fadeIn {
   from {
@@ -90,6 +97,8 @@ main > div > h2, h3 {
     opacity: 0;
   }
 }
+
+
 
 .project_list:hover:not(:hover .project_image) .project_image {
   animation: fadeIn 0.3s linear forwards; 

@@ -1,0 +1,23 @@
+{
+  "name": "PORTFOLIO2024",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "dependencies": {
+        "hover.css": "^2.3.2",
+        "jquery": "^3.7.1"
+      }
+    },
+    "node_modules/hover.css": {
+      "version": "2.3.2",
+      "resolved": "https://registry.npmjs.org/hover.css/-/hover.css-2.3.2.tgz",
+      "integrity": "sha512-eXch700vfcoSSAcEcU154lTHBYQy2cjGT+yJZtkKWxASBBiPVkqYOdMAa0sz4cYj2YIrl1FRE2s5O4EgOaIpig=="
+    },
+    "node_modules/jquery": {
+      "version": "3.7.1",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.7.1.tgz",
+      "integrity": "sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg=="
+    }
+  }
+}
