@@ -64,7 +64,7 @@ h2 {
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .links {
@@ -78,34 +78,54 @@ h2 {
 
 .links::after {
   content: "";
-	background-color: white;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 2px;
-	width: 0;
-	transition: 0.5s;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: 0.5s;
   top: 55px;
 }
 
 .links:hover,
 .links:focus {
-	color: white;
+  color: white;
 }
 
 .links:hover::after,
 .links:focus::after {
-	background-color: white;
-	width: 100%;
+  background-color: white;
+  width: 100%;
 }
 
 .extra {
-    display: inline-flex;
-    cursor: pointer;
-    align-items: center;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+/*small*/
+@media only screen and (max-width: 590px) {
+  a > h1 {
+    font-size: 36px; /* Smaller than 46px */
+  }
+
+  h2 {
+    font-size: 24px;  /* Adjusted for better readability */
+  }
+
+  main {
+    top: 110px;;
+  }
+
+  .logo, .menu {
+    padding: 50px;  /* Smaller than 90px */
+    width: 40px;
+  }
 }
