@@ -1,24 +1,24 @@
 @font-face {
   font-family: "benzin-bold";
-  src: url("../fonts/Benzin-Bold.ttf") format("truetype");
+  src: url("/portfolio2024/fonts/Benzin-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "benzin-extrabold";
-  src: url("../fonts/Benzin-ExtraBold.ttf") format("truetype");
+  src: url("/portfolio2024/fonts/Benzin-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "benzin-medium";
-  src: url("../fonts/Benzin-Medium.ttf") format("truetype");
+  src: url("/portfolio2024/fonts/Benzin-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "benzin-regular";
-  src: url("../fonts/Benzin-Regular.ttf") format("truetype");
+  src: url("/portfolio2024/fonts/Benzin-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "benzin-semibold";
-  src: url("../fonts/Benzin-Semibold.ttf") format("truetype");
+  src: url("/portfolio2024/fonts/Benzin-Semibold.ttf") format("truetype");
 }
