@@ -147,6 +147,16 @@ a {
     margin-bottom: 15px;
   }
 
+  .logo {
+    width: 40px;
+    padding: 30px 40px;
+  }
+
+  .menu {
+    width: 50px;
+    padding: 30px 40px;
+  }
+
   .link_name {
     margin-bottom: 30px;
   }

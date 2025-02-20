@@ -277,20 +277,15 @@ FOR LENOVO SHIT COMPUTER
     display: flex;
     justify-content: center;
   }
-  /* 
-  .logo,
-  .menu {
-    padding: 30px 90px;
-  } */
 
   .logo {
     width: 40px;
-    padding: 30px 90px;
+    padding: 30px 40px;
   }
 
   .menu {
     width: 50px;
-    padding: 30px 90px;
+    padding: 30px 40px;
   }
 
   .bottom {

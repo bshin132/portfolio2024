@@ -23,50 +23,41 @@ body {
   justify-content: space-between;
 }
 
-.me {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-radius: 0 10% 0 0;
-    width: 880px;
-    height: 760px;
-    display: none;
-}
-
 main {
-    padding-left: 52%;
-    padding-right: 12%;
-    animation-delay: 0.6s;
+  padding-left: 52%;
+  padding-right: 12%;
+  animation-delay: 0.6s;
 }
 
 h1 {
-    font-family: "benzin-semibold";
-    color: #fff;
-    margin: 0;
+  font-family: "benzin-semibold";
+  color: #fff;
+  margin: 0;
 }
 
 hr {
-    margin: 0;
+  margin: 0;
 }
 
 main > div {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-main > div > h2, h3 {
-    font-family: 'benzin-regular';
-    color: #FFF;
+main > div > h2,
+h3 {
+  font-family: "benzin-regular";
+  color: #fff;
 }
 
 .title {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .project_image {
   position: absolute;
   border-radius: 0 10% 0 0;
-  width: 880px;
+  width: 50%;
   left: 0;
   top: 0;
   height: 760px;
@@ -78,7 +69,6 @@ main > div > h2, h3 {
 .title:hover + .project_image {
   opacity: 1;
 }
-
 
 @keyframes fadeIn {
   from {
@@ -98,12 +88,84 @@ main > div > h2, h3 {
   }
 }
 
-
-
 .project_list:hover:not(:hover .project_image) .project_image {
-  animation: fadeIn 0.3s linear forwards; 
+  animation: fadeIn 0.3s linear forwards;
 }
 
 .project_list:not(:hover) .project_image {
-  animation: fadeOut 0.5s linear forwards; 
+  animation: fadeOut 0.5s linear forwards;
 }
+
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 840px) {
+  main {
+    padding-left: 7%;
+    padding-right:7%;
+  }
+
+  .logo {
+    width: 40px;
+    padding: 30px 40px;
+  }
+
+  .menu {
+    width: 50px;
+    padding: 30px 40px;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  hr {
+    margin-bottom:20px;
+  }
+
+  .project_list {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space out h2 and h3 */
+    flex-wrap: wrap; /* Prevent overflow on smaller screens */
+    gap: 10px; /* Add spacing between elements */
+  }
+
+  .project_image {
+    position: relative; /* Instead of absolute, so it moves with content */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    opacity: 1; /* Ensure it's visible */
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .project_list h2,
+.project_list h3 {
+  margin: 0; /* Remove default margin */
+  flex: 1; /* Allow them to grow evenly */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+  .project_list h3 {
+    text-align: right; /* Align description to the right */
+    width: 100%;
+  }
+
+  .project_list:hover:not(:hover .project_image) .project_image {
+    animation: none;
+  }
+  
+  .project_list:not(:hover) .project_image {
+    animation: none;
+  }
+  
+  .divider {
+    margin-bottom: 25px;
+    border: none;
+  };
+}
+
