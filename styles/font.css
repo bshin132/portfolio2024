@@ -1,24 +1,24 @@
 @font-face {
   font-family: "benzin-bold";
-  src: url(/fonts/Benzin-Bold.ttf);
+  src: url(/fonts/benzin-bold.ttf);
 }
 
 @font-face {
   font-family: "benzin-extrabold";
-  src: url(/fonts/Benzin-ExtraBold.ttf);
+  src: url(/fonts/benzin-extrabold.ttf);
 }
 
 @font-face {
   font-family: "benzin-medium";
-  src: url(/fonts/Benzin-Medium.ttf);
+  src: url(/fonts/benzin-medium.ttf);
 }
 
 @font-face {
   font-family: "benzin-regular";
-  src: url(/fonts/Benzin-Regular.ttf);
+  src: url(/fonts/benzin-regular.ttf);
 }
 
 @font-face {
   font-family: "benzin-semibold";
-  src: url(/fonts/Benzin-Semibold.ttf);
+  src: url(/fonts/benzin-semibold.ttf);
 }
